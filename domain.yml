@@ -1,0 +1,75 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- option_1:
+    use_entities: true
+- option_2:
+    use_entities: true
+- option_3:
+    use_entities: true
+- option_4:
+    use_entities: true
+- option_5:
+    use_entities: true
+- option_yes:
+    use_entities: true
+- option_no:
+    use_entities: true
+- out_of_scope:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_iamabot:
+  - text: I am BL_Bot.
+  utter_ask_question:
+  - buttons:
+    - payload: /option_1
+      title: Option 1
+    - payload: /option_2
+      title: Option 2
+    - payload: /option_3
+      title: Option 3
+    - payload: /option_4
+      title: Option 4
+    - payload: /option_5
+      title: None of above
+    text: Please SELECT any query from the below options
+  utter_option1:
+  - text: You have clicked on option1
+  utter_option2:
+  - text: You have clicked on option2
+  utter_option3:
+  - text: You have clicked on option3
+  utter_option4:
+  - text: You have clicked on option4
+  utter_option5:
+  - text: We'll get in touch with you asap
+  utter_continue_or_not:
+  - buttons:
+    - payload: /option_yes
+      title: Yes
+    - payload: /option_no
+      title: No
+    text: Do you want to continue ?
+  utter_option_yes:
+  - text: You choose Yes
+  utter_option_no:
+  - text: Thanks for the Interaction have a great day! good Bye!
+  utter_greet:
+  - text: Hello
+  utter_out_of_scope:
+  - text: Could not get you, could you rephase it again ?
+actions: []
+forms: {}
+e2e_actions: []

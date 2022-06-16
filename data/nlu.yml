@@ -1,0 +1,65 @@
+  version: "2.0"
+
+  nlu:
+  - intent: option_1
+    examples: |
+      - option1 ? 
+      - Choose option1 
+
+  - intent: option_2
+    examples: |
+      - option2 ? 
+      - Choose option2 
+
+  - intent: option_3
+    examples: |
+      - option3 ? 
+      - Choose option3 
+
+  - intent: option_4
+    examples: |
+      - option4 ? 
+      - Choose option4 
+
+  - intent: option_5
+    examples: |
+      - option5 ? 
+      - Choose option5 
+
+  - intent: option_yes
+    examples: |
+      - option yes
+      - yes
+      - choose yes
+
+  - intent: option_no
+    examples: |
+      - option no
+      - no
+      - choose no
+
+  - intent: bot_challenge
+    examples: |
+      - who are you ?
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: out_of_scope
+    examples: |
+      - I want to order food
+      - what is the price of iphone?
+      - What is 2 + 2?
+      - Who's the US President?
+
+  - intent: greet
+    examples: |
+      - Hello
+      - hey
+      - hey, how are you ?
+      - hey, gm
+      - Hi
+      - Good morning
+      - Good evening
+      - good noon

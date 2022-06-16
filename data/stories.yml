@@ -1,0 +1,54 @@
+version: "2.0"
+
+stories:
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_question
+
+- story: option1 path
+  steps:
+  - intent: option_1
+  - action: utter_option1
+  - action: utter_continue_or_not
+
+- story: option2 path
+  steps:
+  - intent: option_2
+  - action: utter_option2
+  - action: utter_continue_or_not
+
+- story: option3 path
+  steps:
+  - intent: option_3
+  - action: utter_option3
+  - action: utter_continue_or_not
+
+- story: option4 path
+  steps:
+  - intent: option_4
+  - action: utter_option4
+  - action: utter_continue_or_not
+
+- story: option5 path
+  steps:
+  - intent: option_5
+  - action: utter_option5
+  - action: utter_option_no
+
+- story: option yes
+  steps:
+  - intent: option_yes
+  - action: utter_option_yes
+  - action: utter_ask_question
+
+- story: option no
+  steps:
+  - intent: option_no
+  - action: utter_option_no
+
+- story: bl_bot path
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
